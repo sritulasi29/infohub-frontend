@@ -13,7 +13,7 @@ export default function Quotes() {
       setLoading(true);
       setQuote(null);
 
-      const res = await axios.get("http://127.0.0.1:8000/api/quotes/");
+      const res = await axios.get("http://infohub-backend-3.onrender.com/api/quotes/");
       if (res.data.error) {
         setError(res.data.error);
         setLoading(false);
