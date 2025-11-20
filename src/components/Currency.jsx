@@ -26,7 +26,7 @@ export default function Currency() {
       }
 
       const res = await axios.get(
-        `http://infohub-backend-3.onrender.com/api/convert/?from=${fromCurr}&to=${toCurr}&amount=${amount}`
+        `https://infohub-backend-3.onrender.com/api/convert/?from=${fromCurr}&to=${toCurr}&amount=${amount}`
       );
 
       if (res.data.error) {

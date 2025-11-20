@@ -43,7 +43,7 @@ export default function Weather() {
       setData(null);
 
       const res = await axios.get(
-        `http://infohub-backend-3.onrender.com/api/weather/?city=${city}`
+        `https://infohub-backend-3.onrender.com/api/weather/?city=${city}`
       );
 
       if (res.data.error) {
